@@ -1,0 +1,202 @@
+#Flexbody {
+    display:flex;
+    background-image:url(bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-family: Calibri;
+}
+
+#flexbox {
+    
+    display:inline-block;
+    margin:auto;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.element:nth-child(1) {
+    font-size: 5em;
+    color: black;
+    -webkit-text-stroke: 2px rgba(255, 215, 0, 1);
+    border-radius;10px;
+    margin: auto;
+}
+
+.element:nth-child(2) {
+    margin-top: -0.5em;
+    font-size: 3em;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+ul {
+    display: inline-block;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(255, 215, 0, 1);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    border-left: 2px solid black ;
+    border-right:2px solid black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:0.2s;
+}
+
+li a:hover {
+    transition:0.2s;
+    background-color:black;
+    color: rgba(255, 215, 0, 1);
+    font-size:1em
+}
+
+#corps{
+    display: inline-block;
+    background-color:rgba(48,48,48,0.8);
+    border-radius: 10px;
+    margin-left: 3%;
+    flex-direction: column;
+    flex-grow: 0.5;
+    width: 50%;
+    margin-bottom: 2em;
+    
+}
+
+.ElementC:nth-child(1){
+    color:white;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3em;
+}
+
+.ElementC:nth-child(2){
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+
+#chatwrite{
+    display: inline-block;
+    margin:auto;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+}
+
+#Tout{
+    display: inline-block;
+    flex-direction: row;
+}
+#Desc{
+    display: inline-block;
+    background-color:rgba(48,48,48,0.8);
+    border-radius: 10px;
+    margin: auto;
+    flex-direction: column;
+    flex-grow: 0.2;
+    text-align: justify;
+    font-size: 1.5em;
+    width: 25%;
+}
+
+.ElementDesc{
+    color:whitesmoke;
+}
+
+#prevention{
+    display: inline-block;
+    background-color:rgba(48,48,48,0.8);
+    border-radius: 10px;
+    margin-left: 3%;
+    margin-top:50%;
+    flex-direction: column;
+    flex-grow: 0.5;
+    width: 61%;
+}
+
+.ElementP:nth-child(1){
+    color:white;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ElementP:nth-child(2){
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.5em;
+}
+#box{
+    color:orange;
+    font-size: 4em;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+}
+
+#Chat a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 3%;
+}
+#Chat a:hover {
+    background-color: dimgrey;
+    border-radius: 10px;
+    font-size:1em;
+    text-decoration: none;
+}
+
+.puce{
+    display: inline-block;
+    margin: auto;
+    color: whitesmoke;
+    font-size: 2em;
+}
+#corps
+{
+    padding:2em;
+    display: inline-block;
+    width:15%;
+}
+#Desc{
+    position:absolute;
+    padding: 2em;
+    display: inline-block;
+}
+.element
+{
+    display: flex;
+}

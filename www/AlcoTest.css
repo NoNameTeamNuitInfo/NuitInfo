@@ -1,0 +1,132 @@
+#Flexbody {
+    display:flex;
+    background-image:url(bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-family: Calibri;
+}
+
+#flexbox {
+    display:flex;
+    margin:auto;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.element:nth-child(1) {
+    font-size: 5em;
+    color: black;
+    -webkit-text-stroke: 2px rgba(255, 215, 0, 1);
+    border-radius;10px;
+    margin: auto;
+}
+
+.element:nth-child(2) {
+    margin-top: -0.5em;
+    font-size: 3em;
+    flex-grow: 10;
+    color: white;
+    justify-content: space-around;
+}
+
+#groupe{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(48, 48, 48, 0.8);
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.elementp:nth-child(1) {
+    font-size: 3em;
+    color: white;
+    border-radius;10px;
+    margin: auto;
+    text-align: center;
+}
+
+#type{
+    display: flex;
+    margin: auto;
+    font-size: 2em;
+    border-radius:10px;
+}
+
+#poid{
+    display: flex;
+    margin: auto;
+    font-size: 2em;
+    border-radius:10px;
+}
+
+#pourcentage{
+    display: flex;
+    margin: auto;
+    font-size: 2em;
+    border-radius:10px;
+}
+
+#quantite{
+    display: flex;
+    margin: auto;
+    font-size: 2em;
+    border-radius:10px;
+    margin-bottom: 0.5em;
+}
+
+
+.elementp:nth-child(2) {
+    font-size: 3em;
+    color: white;
+    border-radius;10px;
+    margin: auto;
+    text-align: center;
+}
+
+.elementp{
+    font-size: 3em;
+    color: white;
+    border-radius;10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(255, 215, 0, 1);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    border-left: 2px solid black ;
+    border-right:2px solid black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:0.2s;
+}
+
+li a:hover {
+    transition:0.2s;
+    background-color:black;
+    color: rgba(255, 215, 0, 1);
+    font-size:1em
+}
+

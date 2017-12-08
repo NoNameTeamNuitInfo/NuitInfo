@@ -1,0 +1,211 @@
+#Flexbody {
+    display:flex;
+    background-image:url(bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-family: Calibri;
+}
+
+#flexbox {    
+    display:flex;
+    margin:auto;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.element:nth-child(1) {
+    font-size: 5em;
+    color: black;
+    -webkit-text-stroke: 2px rgba(255, 215, 0, 1);
+    border-radius;10px;
+    margin: auto;
+}
+
+.element:nth-child(2) {
+    margin-top: -0.5em;
+    font-size: 3em;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.element:nth-child() {
+    font-size: 5em;
+    color: black;
+    -webkit-text-stroke: 2px rgba(255, 215, 0, 1);
+    border-radius;10px;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(255, 215, 0, 1);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    border-left: 2px solid black ;
+    border-right:2px solid black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:0.2s;
+}
+
+li a:hover {
+    transition:0.2s;
+    background-color:black;
+    color: rgba(255, 215, 0, 1);
+    font-size:1em
+}
+#tout
+{
+    display: inline-block;
+}
+#corps
+{
+    background: rgba(48,48,48,0.8);
+    padding: 2%;
+    width:30%;
+    border-radius: 10px;
+    color: white;
+    font-size:1.5em;
+    margin-left: 8em;
+    display: inline-block;
+}
+#corps h1
+{
+    margin: 0;
+    text-align: center;
+    
+}
+#Desc
+{
+    display: inline-block;
+    background: rgba(48,48,48,0.8);
+    padding: 2%;
+    width:30%;
+    border-radius: 10px;
+    color: white;
+    font-size:1.5em;
+    margin-top: 0;
+    float: right;
+    margin-right: 8em;
+}
+#Chat
+{
+    text-align: center;
+}
+#Chat a
+{
+    color: #f7ff21;
+    text-shadow: 0 0 2px #f7ff21;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+#corps form
+{
+    margin-top: 5%;
+    text-align: center;
+
+}
+#corps form input
+{
+        font-size: 1.2em;
+}
+#box
+{
+    text-align: center;
+}
+#tablechaos
+{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+iframe
+{
+    display: flex;
+    margin: auto;
+}
+#listen
+{
+    text-shadow: 0 0 2px white;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.4em;
+    margin-bottom: 3%;
+}
+
+
+
+.Cvisible
+{
+    visibility: visible;
+}
+
+.Chidden
+{
+   visibility: hidden;
+}
+.prevention
+{
+    display: inline-block;
+    background: rgba(48,48,48,0.8);
+    padding: 2%;
+    width:80%;
+    border-radius: 10px;
+    color: white;
+    font-size:1.5em;
+    margin-top: 4%;
+    margin-right: 0;
+    margin-left: 8%;
+    margin-bottom:0;
+}
+.prevention h1
+{
+    text-align: center;
+    margin:0;
+}
+#Tout h1
+{
+    color:rgba(255, 215, 0, 1);
+    text-shadow: 0 0 4px rgba(255, 215, 0, 1);
+}
+#listen
+{
+    color:rgba(255, 215, 0, 1);
+    text-shadow: 0 0 4px rgba(255, 215, 0, 1);
+}
+iframe
+{
+    margin-bottom: 3%;
+}
+body
+{
+    overflow-x: hidden;
+}
+table td
+{
+    background: white;
+    
+}
+th a
+{
+     text-decoration: none;
+    color: green;
+}

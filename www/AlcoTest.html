@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+
+<html lang="fr">
+    
+    <head>
+        
+        <title>Site NuitInfo NoName</title>
+        <link rel="stylesheet" href="AlcoTest.css">
+        <meta charset="utf-8"/>
+		<meta name="XXX"
+        content="XXX" />
+		<meta name="keyword" content="XXX" />
+		 <script>
+				        var poid=0;
+				        var type=0;
+				        var ml=0;
+				        var pourcentage=0;
+				        var conso=0;
+				        var consoi=0;
+				        var cpt=0;
+				      	console.log(poid);
+				      		console.log("yoaa");
+				       	 function bo() {
+				       	 console.log("yo");
+				      	poid = document.getElementById("poid").value;
+				      	console.log(poid);
+				      	 type = document.getElementById("type").value;
+				      	console.log(type);
+				      	 ml = document.getElementById("quantite").value;
+				      	console.log(ml);
+				      	 pourcentage = document.getElementById("pourcentage").value;
+				      	 console.log(pourcentage);
+
+				      		if(type=="homme")
+				      		{
+				      			console.log("vous etes un homme");
+								pourcentage=pourcentage*0.01;
+								console.log(pourcentage);
+				      			 conso=(ml*pourcentage*0.8);
+				      			 console.log(conso);
+				      			consoi=(0,7*poid);
+				      			console.log(consoi);
+				      			conso=(conso/consoi);
+				      			console.log(conso);
+				      			if (conso>0.08) {
+				      				console.log("Vous devez attendre pour conduire");
+				      				document.getElementById("resultat").innerHTML = "vous devais attendre ",cpt," heures";
+				      				while(conso>0.08)
+				      				{
+				      				conso=conso-0.01;
+				      				cpt = cpt+1;
+				      				}
+				      				console.log("Vous devez attendre ",cpt," heure");
+				      				document.getElementById("resultat").innerHTML = "Vous devez attendre "
+				      				document.getElementById("resultat2").innerHTML = cpt
+				      				document.getElementById("resultat3").innerHTML = " heures";
+				      			cpt=0;
+				      			}
+
+				      			
+				      		}
+				      		if(type=="femme"){
+				      			cpt=0;
+				      			console.log("Vous etes une femme");
+								pourcentage=pourcentage*0.01;
+								console.log("1");
+				      			 conso=(ml*pourcentage*0.8);
+				      			 console.log("2");
+				      			consoi=(0,6*poid);
+				      			console.log("3");
+				      			conso=(conso/consoi);
+				      			console.log("4");
+				      			console.log(conso);
+				      			if (conso>=0.08) {
+				      				console.log("vous devez attendre pour conduire");
+				      				document.getElementById("resultat").innerHTML = "vous devez attendre pour conduire";
+				      				while(conso>0.08)
+				      				{
+				      				conso=conso-0.01;
+				      				cpt = cpt+1;
+				      				}
+
+				      				if (cpt==0)
+				      				{
+				      					console.log("vous devais attendre moins d'une heure");
+				      					document.getElementById("resultat").innerHTML = "Vous devez attendre moins d'une heure";
+				      				}
+				      				else
+				      				{
+				      				console.log("vous devais attendre ",cpt," heure");
+				      			}
+				      			}
+				      			else
+				      			{
+				      				console.log("vous etes apte a conduire mais meffier vous ce ne sont que des stats");
+				      			}
+
+
+				      			
+				      			
+				      		}
+
+
+
+					
+				        }
+				        
+</script>
+    </head>
+    
+    <body id="Flexbody">
+        <div id="flexbox">
+            <h1 class="element">Site nuit de l'Info</h1>
+            <nav class="element">
+                <ul id="nav">
+                    <li class="ElementNav"><a href="index.html"> Accueil </a></li>
+                    <li class="ElementNav"><a href="ChatBox.html"> ChatBot </a></li>
+                    <li class="ElementNav"><a href="AlcoTest.html"> AlcoTest </a></li>
+                </ul>
+            </nav>
+            <div id="groupe">
+                <h2 class="elementp">Etes-vous sur de pouvoir prendre la route ?</h2>
+       <form>
+			<!--<select id="boissons" class="long" value="1">
+				<option value="10.73">Bière légère 4% - bouteille 340ml</option>
+				<option value="11.2">Bière légère 4% - canette 355ml</option>
+				<option value="13.41">Bière 5% - bouteille 340ml</option>
+				<option value="14">Bière 5% - canette 355ml</option>
+				<option value="19.73">Bière 5% - canette 500ml</option>
+				<option value="22.41">Bière 5% - pinte 568ml</option>
+				<option value="26.04">Bière 5% - bouteille 660ml</option>
+				<option value="29.59">Bière 5% - bouteille 750ml</option>
+				<option value="14.75">Bière 5.5% - bouteille 340ml</option>
+				<option value="15.41">Bière 5.5% - canette 355ml</option>
+				<option value="21.7">Bière 5.5% - canette 500ml</option>
+				<option value="24.65">Bière 5.5% - pinte 568ml</option>
+				<option value="16.36">Bière 6.1% - bouteille 340ml</option>
+				<option value="17.09">Bière 6.1% - canette 355ml</option>
+				<option value="24.06">Bière 6.1% - canette 500ml</option>
+				<option value="27.34">Bière 6.1% - pinte 568ml</option>
+				<option value="21.46">Bière 8% - bouteille 340ml</option>
+				<option value="47.34">Bière 8% - bouteille 750ml</option>
+				<option value="24.14">Bière 9% - bouteille 340ml</option>
+				<option value="53.26">Bière 9% - bouteille 750ml</option>
+				<option value="26.83">Bière 10% - bouteille 340ml</option>
+				<option value="59.18">Bière 10% - bouteille 750ml</option>
+				<option value="29.51">Bière 11% - bouteille 340ml</option>
+				<option value="65.09">Bière 11% - bouteille 750ml</option>
+				<option value="32.19">Bière 12% - bouteille 340ml</option>
+				<option value="71.01">Bière 12% - bouteille 750ml</option>
+				<option value="10.85">Flûte de vin 11% - 125ml</option>
+				<option value="12.15">Verre de vin 11% - standard 140ml</option>
+				<option value="15.19">Verre de vin 11% - 175ml</option>
+				<option value="21.70">Verre de vin 11% - 250ml</option>
+				<option value="11.84">Flûte de vin 12% - 125ml</option>
+				<option value="13.26">Verre de vin 12% - standard 140ml</option>
+				<option value="16.57">Verre de vin 12% - 175ml</option>
+				<option value="23.67">Verre de vin 12% - 250ml</option>
+				<option value="12.82">Flûte de vin 13% - 125ml</option>
+				<option value="14.36">Verre de vin 13% - standard 140ml</option>
+				<option value="17.95">Verre de vin 13% - 175ml</option>
+				<option value="25.64">Verre de vin 13% - 250ml</option>
+				<option value="13.41">Vin fortifié 20% - standard 85ml</option>
+				<option value="19.73">Vin fortifié 20% - 125ml</option>
+				<option value="14.20">Spiritueux 40% - standard 1.5oz/45ml</option>
+				<option value="17.99">Spiritueux 40% - 2oz/57ml</option>
+				<option value="15.78">Cocktail 40% - 1.75oz/50ml</option>
+				<option value="14.20">Shooter 40% - 1.5oz/45ml</option></select>
+				-->
+				
+				<h2 class="elementp">Etes-vous une femme ou un homme ? </h2>
+				<br />
+				<h2>
+				<select id="type">
+					<option value="homme">Homme</option>
+					<option value="femme">Femme</option>
+
+				</select>
+				<h2 class="elementp"> Quel est votre poids (kg) ? </h2>
+
+				<input type="number" id="poid" value="votre poid">
+				<h2 class="elementp"> Quel est le % de votre boisson </h2>
+				<input type="number" id="pourcentage" value="%">
+				<br>
+				<h2 class="elementp"> Quelle quantitée de boisson avez-vous consommé (ml) </h2>
+				<input type="number" id="quantite" value="ml">
+				
+	</form>
+          <button id="bouton" type="button" onclick="bo()">clique ici </button>
+      <br />
+          <p class="elementp"> résultat: </p>
+          <p id="resultat"></p><p id="resultat2"></p><p id="resultat3"></p>
+        </div>
+        </div>
+
+    </body>
+    
+</html>

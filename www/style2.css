@@ -1,0 +1,33 @@
+body
+{
+    background:radial-gradient(hotpink, hotpink, blue, green);
+}
+body *
+{
+    background:-webkit-linear-gradient(left, red, orange, yellow , green, blue, purple);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+li
+{
+    margin-left: 50%;
+    font-size: 6em;
+    display: flex;
+    justify-content: space-around;
+}
+body *:hover
+{
+    transition: 0.2s;
+    font-size: 35em;
+}
+#Desc
+{
+    margin-left: 70%;
+}
+.ElementC
+{
+    position: absolute;
+    top:0;
+    left:5%;
+    font-size: 8em;
+}
